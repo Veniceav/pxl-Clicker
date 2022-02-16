@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;300;400;500;600;700&family=Source+Sans+3:wght@200;300;400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Pxl Clicker</title>
+</head>
+
+<body>
+    <header class="gameBanner">
+        <div class="block-wrap">
+            <div class="block">P</div>
+            <div class="block">x</div>
+            <div class="block">l</div>
+            <div class="block"> </div>
+            <div class="block">C</div>
+            <div class="block">l</div>
+            <div class="block">i</div>
+            <div class="block">c</div>
+            <div class="block">k</div>
+            <div class="block">e</div>
+            <div class="block">r</div>
+        </div>
+    </header>
+    <div class="startScreenContainer">
+        <div class="startScreen">
+            <div id="loadingBar" class="barContainer">
+
+                <div id="booting">
+                    <div id="btext">Booting Up...............................................</div>
+                </div>
+                <button id="startButton">Start</button>
+
+            </div>
+            <p id="progress"></p>
+        </div>
+    </div>
+    <div class="bodyContainer">
+
+        <div class="mainContainer">
+
+
+            <div class="gameContainer">
+                <div class="energyContainer">
+                    <h2>Energy</h2><span id="energy"> : 0 cells</span>
+                </div>
+                <div class="targetContainer">
+                    <div id="characterImg">
+                        <div id="displayDmg">DPS:
+                            <span id="damage">40000</span>
+                        </div>
+                        <div id="avatar">
+                            <div class="spritesheet"></div>
+                        </div>
+                    </div>
+                    <div class="hitBox">
+                        <div class="enemyLevel">Level 1</div>
+                        <div class="bar">
+                            <div class="deathValue">0 </div>
+                            <progress id="healthBar" value="100" max="100">
+
+                            </progress>
+                            <div class="hpMax"></div>
+                        </div>
+
+                        <div id="target"><img id="targetImage" src=""></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="rightColumn">
+            <div class="upgrades">
+                <div class="mainUpgrades">
+                    <h1>-Upgrades-</h1>
+                    <button class="upgradeBTN" id="auto">
+                        <div class="itemContainer">
+                            <div class="icon">
+                                <img src="images\autoclick.png" id="autoIcon" alt="Auto Clicker">
+                                <h3>Auto Clicker</h3>
+                            </div>
+                            <div class="text">
+                                "itll work for you"
+                                <br>Cost: 50 Cells
+                            </div>
+                        </div>
+                    </button>
+                    <button class="upgradeBTN" id="boxingGloves">
+                        <div class="itemContainer">
+                            <div class="icon">
+                                <img src="images\boxinggloves.png" alt="An old Pair of boxing Gloves">
+                                <h3>Boxing Gloves</h3>
+                            </div>
+                            <div class="text">
+                                "An old used pair of Boxing Gloves..."
+                                <br>DPS: 20
+                                <br>Cost: 100 Cells
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="upgradeBTN" id="orbCompanion">
+                        <div class="itemContainer">
+                            <div class="icon">
+                                <img src="images/orbIcon.png" alt="A Relic of the past">
+                                <h3>Orb Companion</h3>
+                            </div>
+                            <div class="text">
+                                "A Relic of the past"
+                                <br>DPS: 75
+                                <br>Cost: 1000 cells
+                            </div>
+                        </div>
+                    </button>
+                    <button class="upgradeBTN" id="busterSword">
+                        <div class="itemContainer">
+                            <div class="icon">
+                                <img src="images/sword.png" alt="Some kinda Sword">
+                                <h3>Buster Sword</h3>
+                            </div>
+                            <div class="text">
+                                "Made from a rare alloy..."
+                                <br>DPS: 200
+                                <br>Cost: 5000 cells
+                            </div>
+                        </div>
+                    </button>
+                    <button class="upgradeBTN" id="masterHand">
+                        <div class="itemContainer">
+                            <div class="icon">
+                                <img src="images\masterHand.png" id="handIcon" alt="The Ultimate Upgrade">
+                                <h3>Master Hand</h3>
+                            </div>
+                            <div class="text">
+                                "The Ultimate Upgrade"
+                                <br>DPS: 5000
+                                <br>Cost: 150000 cells
+                            </div>
+                        </div>
+                    </button>
+                    <button class="upgradeBTN" id="boosters">
+                        <div class="boosterBanner">-Boosters-</div>
+                        <div class="text">
+                            <ul class="boosterItems">
+                                <li></li>
+                            </ul>
+                        </div>
+                    </button>
+
+                    <button class="upgradeBTN" id="inventoryContainer">
+                        <!--upgrades purchased-->
+
+                        <div class="inventoryBanner">-Inventory-</div>
+                        <div class="text">
+                            <ul id=inventory>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+<script src="js/upgrades.js"></script>
+<script src="js/enemyData.js"></script>
+<script src="js/index.js"></script>
+<script src="js/purchasingUpgrades.js"></script>
+
+</html>

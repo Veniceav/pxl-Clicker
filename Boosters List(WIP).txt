@@ -1,0 +1,20 @@
+PXLClicker Upgrades/Boosters
+
+AutoClicker:
+
+Booster 1 - Extra Hand: 2X DPS
+
+Boxing Gloves:
+Booster 1 - Brawler Technique: +50 DPS Flat Damage - 50 Cells
+Booster 2 - Chain Strings: 2X DPS Multiplier - 150 Cells
+Booster 3 - No Punches Held: 2.5X DPS Multiplier - 250 Cells
+
+Orb companion:
+Booster 1: Channel Energy: +150 DPS Flat - 150 Cells
+Booster 2: Spark of Genius: 2X DPS Multiplier - 850 Cells
+Booster 3: Fully Charged: 2.5X DPS Multiplier - 1500 Cells
+
+Buster Sword: 
+Booster 1 - Sharpended Edge: +550 DPS Flat Damage - 650 Cells
+Booster 2 - Aluminum Coating: 2X DPS Multiplier - 2200 Cells
+Booster 3 - Perfect Stance: 2.5X DPS Multiplier - 3500 Cells
