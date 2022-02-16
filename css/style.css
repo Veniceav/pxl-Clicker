@@ -262,7 +262,7 @@ body {
 
 .spritesheet {
     image-rendering: pixelated;
-    background-image: url("images/avatarsheetidle.png");
+    background-image: url("../images/avatarsheetidle.png");
     background-size: cover;
     height: 300px;
     width: 180px;
