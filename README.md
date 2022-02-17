@@ -9,7 +9,7 @@ This is an incremental clicker with RPG-lite elements tied in. Its a personal pr
 * Vanilla Javascript
 
 ### Contributors
-Khary Beddoe - Sprite-Work, Animations, Code
+Khary Beddoe(Veniceav) - Sprite-Work, Animations, Code
 
 ### How to use
 It just runs in the browser, simply hit the start button. Click the enemy to do damage, and use cells to purchase upgrades.
