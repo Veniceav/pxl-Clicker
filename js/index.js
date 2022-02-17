@@ -6,6 +6,21 @@ const bootingUp = document.getElementById('btext');
 const bootingContainer = document.getElementById('booting')
 const loadBar = document.getElementById('loadingBar');
 
+//stat declarations/Selectors
+
+let
+  dps,
+  enemyBaseHp,
+  enemyLevel,
+  cellsBanked,
+  enemyHp = enemyBaseHp;
+
+const
+  enemyHpbar = document.querySelector("#healthBar"),
+  dpsDisplay = document.querySelector("#damage"),
+  cells = document.querySelector("#energy"),
+  hpDisplay = document.querySelector(".hpMax");
+
 //Hide Game page for loading page
 
 function setup() {
@@ -78,21 +93,6 @@ function load() {
   });
 };
 
-//stat declarations/Selectors
-
-let
-  dps,
-  enemyBaseHp,
-  enemyLevel,
-  cellsBanked,
-  enemyHp = enemyBaseHp;
-
-const
-  enemyHpbar = document.querySelector("#healthBar"),
-  dpsDisplay = document.querySelector("#damage"),
-  cells = document.querySelector("#energy"),
-  hpDisplay = document.querySelector(".hpMax");
-
 //Enemy, Stats, Cells reset for New Game
 
 function resetStats() {
@@ -136,9 +136,7 @@ function click() {
   }
 };
 //Clicking Target Event
-document.querySelector("#target").addEventListener("click", function () {
-  click();
-});
+document.querySelector("#target").addEventListener("click", click)
 
 //XP/Cells Recieved on Kill
 function giveEnemyXp() {
