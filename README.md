@@ -1,5 +1,7 @@
 # Pxl Clicker
 
+https://veniceav.github.io/pxl-Clicker/
+
 ### Summary
 This is an incremental clicker with RPG-lite elements tied in. Its a personal project, mainly for my portfolio, meant for showcasing and strengthening my skills in creating functions and stringing them together, object manipulation, loop utilization, interactive UI Elements, and brushing up on CSS skills.
 
